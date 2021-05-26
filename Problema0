@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void getMinMax(int *data,int n,int *min,int *max){
+    *min=data[0];
+    *max=data[0];
+    
+    for(int i=0;i<n;i++){
+        if(data[i]>*max)
+        *max=data[i];
+        else if(data[i]<*min)
+        *min=data[i];
+    }
+}
+int main()
+{
+    int data[10]={45,36,22,78,10,11,17,2,1,131};
+    int min,max;
+    int x;
+    getMinMax(data,10,&min,&max);
+    printf("Máximo:%d\nMínimo:%d",max,min);
+    return 0;
+}
+
