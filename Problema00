@@ -22,3 +22,13 @@ int main()
     return 0;
 }
 
+/*Relatório
+
+O custo computacional da função criada em sala de aula para encontrar os valores máximo e mínimo de um vetor de n posições era de  f(n) = 2(n − 1) operações.
+Isso se deve ao fato de que cada if dentro do for representava uma unidade de custo computacional. Desse modo, como os 2 ifs eram testados todas as n vezes q
+ue o for rodava.
+
+No novo programa, o segundo if só conta se a condição do primeiro não for satisfeita, Desse modo, o custo que antes era fixo ,se torna variável. No pior dos 
+casos, que é o caso em que o vetor estiver em ordem decrescente,  o custo será  o mesmo do código anterior.  No melhor caso, que seria um vetor em ordem  
+crescente, o segundo if nunca seria usado, ou seja, o custo computacional seria metade do custo do código anterior. Em média,o novo código teria 75 por cento
+do custo do código feito em aula. */
